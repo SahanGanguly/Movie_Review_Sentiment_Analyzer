@@ -28,21 +28,21 @@ label is one of Positive / Negative / Neutral. Confidence is between 0 and 1. Ev
 # if __name__ == "__main__":
 This is the main execution block where the user enters reviews and each review is sent to analyzer and thereafter it prints results with coloured emojis.
 
-B.Streamlit_app.py
-Wraps the existing sentiment analyzer around a web based UI.
-Step: streamlit run streamlit_app.py
-1. Imports and Setup:
-   streamlit for developing the web UI
-   SentimentAnalyzer from the existing sentiment_llm.py
+# B.Streamlit_app.py
+    Wraps the existing sentiment analyzer around a web based UI.
+# Step: streamlit run streamlit_app.py
+# 1. Imports and Setup:
+     streamlit for developing the web UI
+     SentimentAnalyzer from the existing sentiment_llm.py
 2.Model Formation:
 # Streamlit UI
 Sets up page title & layout. Adds a text area for users to input their movie review. Adds an Analyze button to trigger sentiment analysis.
 
 C.batch_eval.py
-Imports and Libraries
-Pandas to load dataset
-Counter: Counts the number of occurences
-Confusion Matrix and Classification Report: Evaluation Metrics for model evaluation
+# Imports and Libraries
+    Pandas to load dataset
+    Counter: Counts the number of occurences
+    Confusion Matrix and Classification Report: Evaluation Metrics for model evaluation
 
-# Confusion Matrix: Shows how many reviews of each true label were predicted correctly/incorrectly.
-# Classification Report: Provides precision, recall, F1-score for each sentiment class.
+ Confusion Matrix: Shows how many reviews of each true label were predicted correctly/incorrectly.
+ Classification Report: Provides precision, recall, F1-score for each sentiment class.
