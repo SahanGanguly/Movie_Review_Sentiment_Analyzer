@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
+#searches for the API Key in the streamlit screts. Falls back to environment varaible if not found
 api_key = st.secrets.get("GOOGLE_API_KEY", os.getenv("GEMINI_API_KEY"))
 
 class SentimentAnalyzer:
@@ -221,6 +222,7 @@ if __name__ == "__main__":
         print("\n👋 Goodbye!")
     except Exception as e:
         print(f"❌ An unexpected error occurred: {e}")
+
 
 
 
