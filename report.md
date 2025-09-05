@@ -53,6 +53,6 @@
 
     micro avg       0.89      0.60      0.72        40
     macro avg       0.91      0.61      0.72        40
-    weighted avg       0.93      0.60      0.71        40
+    weighted avg    0.93      0.60      0.71        40
 
 
