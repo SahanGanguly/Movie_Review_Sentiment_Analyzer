@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
-api_key = st.secrets.get("GOOGLE_API_KEY", os.getenv("GEMINI_API_KEY"))
+api_key = st.secrets.get["GEMINI_API_KEY"]
 
 class SentimentAnalyzer:
     def __init__(self, model_name="gemini-2.5-flash", temperature=0.3, neutral_threshold=0.5):
@@ -221,5 +221,6 @@ if __name__ == "__main__":
         print("\n👋 Goodbye!")
     except Exception as e:
         print(f"❌ An unexpected error occurred: {e}")
+
 
 
