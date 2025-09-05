@@ -1,7 +1,7 @@
 # Movie_Review_Sentiment_Analyzer
 # A. Sentiment_LLM: 
     The central idea of this model is to use Gemini's free tier API (Gemini 2.5 Flash in our case) in order to determine a movie review sentiment. 
-# Steps (On VS Code or your preferred IDE terminal)
+# Run (On VS Code or your preferred IDE terminal)
     i. pip install google-generativeai
     ii.pip install python-dotenv
 
