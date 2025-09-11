@@ -156,7 +156,7 @@ JSON Response:
                 except (ValueError, TypeError):
                     result["confidence"] = 0.5
 
-                # 👉 Override rule: low confidence = Neutral
+                # Override rule: low confidence = Neutral
                 if result["confidence"] < self.neutral_threshold:
                     result["label"] = "Neutral"
 
@@ -181,7 +181,7 @@ JSON Response:
 
 if __name__ == "__main__":
     try:
-        analyzer = SentimentAnalyzer(neutral_threshold=0.5)  # 👈 easy to tune here
+        analyzer = SentimentAnalyzer(neutral_threshold=0.5)  
         print("🎬 Movie Review Sentiment Analyzer")
         print("=" * 60)
         previous_explanation = None  # Store previous explanation for chaining
@@ -222,6 +222,7 @@ if __name__ == "__main__":
         print("\n👋 Goodbye!")
     except Exception as e:
         print(f"❌ An unexpected error occurred: {e}")
+
 
 
 
