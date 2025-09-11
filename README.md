@@ -35,11 +35,11 @@
 # 1. Imports and Setup:
      streamlit for developing the web UI
      SentimentAnalyzer from the existing sentiment_llm.py
-2.Model Formation:
+# 2.Model Formation:
 # Streamlit UI
 Sets up page title & layout. Adds a text area for users to input their movie review. Adds an Analyze button to trigger sentiment analysis.
 
-C.batch_eval.py
+# C.batch_eval.py
 # Imports and Libraries
     Pandas to load dataset
     Counter: Counts the number of occurences
