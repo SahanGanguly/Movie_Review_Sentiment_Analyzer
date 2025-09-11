@@ -12,7 +12,7 @@
     logging: Adds logs for debugging and tracking.
     hashlib, lru_cache: Used for caching results so repeated reviews don’t trigger new API calls.
 
-2. Model formation:
+# 2. Model formation:
    
 # class SentimentAnalyzer (main engine):
     __init__ configures the Gemini API key and sets parameters like temperature, model name and neutral threshold. Here I could've used the new Gemini 2.5 pro but the Flash model is simply faster and more adept        for simple classification unlike the pro model which is designed for deep thinking. Now here the temperature is set at very low level in order to form consistent results.
